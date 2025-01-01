@@ -1,0 +1,282 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+  padding: 18px;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 3%;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.logo-image {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #000000;
+  overflow: hidden;
+}
+.logo-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.logo-text {
+  text-align: left;
+}
+.logo-text h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.logo-text p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.feature-box {
+  flex: 1;
+  max-width: 350px;
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+.feature-box:hover {
+  border-color: #000000;
+}
+.feature-box h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.feature-box p {
+  color: #000000;
+  line-height: 1.6;
+}
+.feature-box .feature-image {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.feature-box .feature-image img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+.newsletter {
+  margin: 60px 0;
+  text-align: center;
+}
+.newsletter .subscribe-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.newsletter .subscribe-form input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: "Times New Roman", Times, serif;
+}
+.newsletter .subscribe-form input:focus {
+  outline: none;
+  border-color: #000000;
+}
+.newsletter .subscribe-form button {
+  padding: 12px 30px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+.newsletter .subscribe-form button:hover {
+  color: #de760ea2;
+}
+footer {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  gap: 30px;
+}
+footer .footer-links {
+  width: 100%;
+  border-collapse: collapse;
+}
+footer .footer-links td {
+  width: 33.333%;
+  padding: 20px;
+  vertical-align: top;
+}
+footer .footer-links ul {
+  list-style: none;
+}
+footer .footer-links li {
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+footer .footer-links li:first-child {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000000;
+}
+footer .footer-links li:not(:first-child) {
+  color: #000000;
+}
+footer .footer-links li:not(:first-child):hover {
+  color: #000000;
+  padding-left: 5px;
+}
+@media (min-width: 3100px) {
+  body {
+    font-size: 50px;
+    padding: 30px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 60px;
+    box-shadow: 0 0 60px #000000;
+  }
+  header {
+    margin-bottom: 100px;
+    margin-top: 5%;
+  }
+  .logo-container {
+    gap: 50px;
+  }
+  .logo-image {
+    width: 100%;
+    height: auto;
+  }
+  .logo-text h1 {
+    font-size: 50px;
+    letter-spacing: 12px;
+  }
+  .logo-text p {
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
+  .features {
+    gap: 60px;
+    margin-bottom: 100px;
+  }
+  .feature-box {
+    max-width: 1000px;
+    width: 100%;
+    padding: 30px;
+  }
+  .feature-box h2 {
+    font-size: 50px;
+  }
+  .feature-box p {
+    font-size: 45px;
+  }
+  .newsletter {
+    margin: 100px 0;
+  }
+  .subscribe-form input {
+    padding: 18px 25px;
+    font-size: 50px;
+  }
+  .subscribe-form button {
+    padding: 18px 45px;
+    font-size: 50px;
+  }
+  footer {
+    margin-top: 100px;
+    padding-top: 60px;
+    gap: 40px;
+  }
+  .footer-links td {
+    padding: 30px;
+  }
+  .footer-links li {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .logo-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo-text {
+    text-align: center;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-box {
+    max-width: 50%;
+  }
+  .subscribe-form {
+    flex-direction: row;
+  }
+  footer {
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-links,
+  .footer-links tbody,
+  .footer-links tr,
+  .footer-links td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-links td {
+    padding: 10px;
+  }
+  .footer-links li:not(:first-child):hover {
+    padding-left: 0;
+    transition: all 0.3s ease;
+  }
+  .footer-links li:not(:first-child):hover:hover {
+    transform: scale(1.05);
+  }
+}

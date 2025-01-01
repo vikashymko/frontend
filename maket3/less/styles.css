@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ffffff;
+  line-height: 1.6;
+  color: #333333;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #eeeeee;
+}
+header .logo-img {
+  width: auto;
+  height: 75px;
+}
+header .register-header-btn {
+  padding: 15px 45px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header .register-header-btn:hover {
+  color: #de760ea2;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+.hero .hero-content {
+  float: left;
+  width: 35%;
+  padding-right: 25px;
+  padding-left: 35px;
+}
+.hero .hero-content h1 {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+.hero .hero-content p {
+  margin-bottom: 50px;
+  font-size: 1em;
+  font-weight: 250;
+}
+.hero .hero-image {
+  float: right;
+  width: 60%;
+}
+.hero .hero-image img {
+  width: 100%;
+  height: auto;
+}
+.register-button {
+  padding: 25px 185px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.register-button:hover {
+  color: #de760ea2;
+}
+.features {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+.features .feature-box {
+  flex: 0 1 425px;
+  border: 1px solid #eeeeee;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+.features .feature-box:hover {
+  border-color: #000000;
+}
+.features .feature-box h2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.register-section {
+  text-align: center;
+  margin: 40px 0;
+}
+.steps-section {
+  margin: 60px 0;
+}
+.steps-section h2 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+.steps-section .steps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-left: 5%;
+}
+.steps-section .steps .step {
+  flex: 0 1 425px;
+  border: 1px solid #eeeeee;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+.steps-section .steps .step:hover {
+  border-color: #000000;
+}
+.steps-section .steps .step .step-number {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+.steps-section .steps .step .step-content h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.footer {
+  margin-top: 60px;
+  border-top: 1px solid #eeeeee;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-table {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.footer-logo {
+  width: 20%;
+}
+.footer-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.footer-table td {
+  padding: 20px;
+  vertical-align: top;
+  text-align: left;
+}
+.footer-table td ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-table td ul li {
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer-table td ul li:hover {
+  color: #de760ea2;
+}
+@media (max-width: 480px) {
+  body {
+    text-align: center;
+  }
+  .container {
+    padding: 10px;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .logo-img {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  header .register-header-btn {
+    padding: 10px 20px;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .hero-content {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .hero .hero-content h1 {
+    font-size: 1.8em;
+  }
+  .hero .hero-image {
+    order: -1;
+    width: 100%;
+  }
+  .register-button {
+    width: 100%;
+    padding: 15px;
+  }
+  .features {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .features .feature-box {
+    width: 100%;
+  }
+  .steps {
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 0;
+  }
+  .steps .step {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .steps .step .step-number {
+    font-size: 24px;
+  }
+  .steps-section h2 {
+    font-size: 1.8em;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .footer-table {
+    display: block;
+  }
+  .footer .footer-table tbody,
+  .footer .footer-table tr,
+  .footer .footer-table td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footer-table .footer-logo img {
+    width: 50%;
+    margin: 0 auto 20px auto;
+  }
+  .footer .footer-table li {
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 3100px) {
+  body {
+    font-size: 2em;
+  }
+  .container {
+    padding: 80px;
+  }
+  header {
+    padding: 40px 0;
+    margin-bottom: 120px;
+    border-bottom: 4px solid #ffffff;
+  }
+  header .logo-img {
+    height: 300px;
+  }
+  header .register-header-btn {
+    padding: 50px 150px;
+    font-size: 2.5em;
+  }
+  .hero {
+    margin-bottom: 160px;
+  }
+  .hero .hero-content {
+    width: 70%;
+    padding-right: 80px;
+    padding-left: 100px;
+  }
+  .hero .hero-content h1 {
+    font-size: 5em;
+  }
+  .hero .hero-content p {
+    font-size: 3em;
+  }
+  .hero .register-button {
+    padding: 70px 140px;
+    font-size: 2.5em;
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .hero .register-button:hover {
+    background-color: #ffffff;
+  }
+  footer {
+    margin-top: 200px;
+    padding: 60px 100px;
+    background-color: #ffffff;
+  }
+  footer p {
+    font-size: 2em;
+    color: #333333;
+  }
+}
